@@ -14,9 +14,9 @@ def get_metrics(results):
         f_statistic (float): F statistic
     """
     
-    rse = np.sqrt(results.mse_resid).round(2)
-    r_squared = results.rsquared.round(2)
-    f_statistic = results.fvalue.round(2)
+    rse = np.sqrt(results.mse_resid).round(6)
+    r_squared = results.rsquared.round(6)
+    f_statistic = results.fvalue.round(6)
     return rse, r_squared, f_statistic
 
 def display_metrics(rse, r_squared, f_statistic):
